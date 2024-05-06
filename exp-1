@@ -1,17 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
 
+
+struct Student{
+    int age;
+ string first_name;
+ string last_name;
+ int standard;
+}st;
+
+
+
 int main() {
-  struct myfirst{
-    int myNum;
-    string myStr;
-  } my;
-
-  my.myNum = 1;
-  my.myStr = "Hello World!";
-
-  cout << my.myNum << "\n";
-  cout << my.myStr << "\n";
-  return 0;
+    Student st;
+    
+    cin >> st.age >> st.first_name >> st.last_name >> st.standard;
+    cout << st.age << " " << st.first_name << " " << st.last_name << " " << st.standard;
+    
+    return 0;
 }
